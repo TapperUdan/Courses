@@ -22,8 +22,22 @@
 
 
  */
+    $br = "<br>";
 
-	
+    function calculation(){
+        $number1 = 42;
+        $number2 = 24;
+        $sum = $number1 + $number2;
+        return $sum;
+        
+    }
+    $theSum = calculation();
+    echo $theSum . $br;
+    
+    function sayHello($message){
+        echo $message;
+    }
+    sayHello("Hello World!")
 ?>
 
 

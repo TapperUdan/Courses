@@ -8,9 +8,13 @@
     
 <?php
 
-    $br = "<br>";
+    $numbers = [345,397,676,385,2657,5784];
     
-    
+    foreach($numbers as  $number){
+        
+        echo $number . "<br>";
+        
+    };
     
 ?>
     

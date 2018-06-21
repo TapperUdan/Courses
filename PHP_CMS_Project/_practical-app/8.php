@@ -27,6 +27,18 @@
 
 	*/
 	
+        
+        $text = "MyInitialText";
+        echo $text;
+        
+        $hash = "$2y$10$";
+        $salt = "thisisactuallyasaltstringdummy";
+        $hashSalt = $hash . $salt;
+        
+        $text = crypt($text, $hashSalt);
+        echo "<br> <h3>Same text encrypted</h3> <br>" . $text;
+        
+        
 	?>
 
 

@@ -27,7 +27,24 @@
 		Step 4 - Connect to Database and read data
 
 */
+        
+    $connect = mysqli_connect('localhost','root', '','cmsclass');
+    if(!$connect){
+        die("database connection failed!");
+    }
+    
+    $query = "SELECT * FROM lesson7test";
+    $result = mysqli_query($connect, $query);
+    if(!$result){
+        die("Query Failed!");
+    }
 	
+        
+    while($row = mysqli_fetch_assoc($result)){
+        echo "<pre>";
+        print_r($row);
+        echo "</pre>";
+    }
 	?>
 
 
