@@ -5,14 +5,8 @@
     <title>Document</title>
 </head>
 <body>
-    
-<?php
 
-    $br = "<br>";
-    
-    
-    
-?>
-    
+
+
 </body>
 </html>
